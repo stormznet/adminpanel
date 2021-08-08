@@ -1,0 +1,431 @@
+/* -------------------------------------------------------------------------------- */
+/* | FONT | */
+/* --------------------------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* -------------------------------------------------------------------------------- */
+/* | BODY | */
+/* --------------------------------------------------------------------------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #4b4b4b;
+  color: #023186;
+  position: relative;
+}
+
+.stan {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 5rem;
+  margin-top: 20px;
+  text-align: center;
+  margin: 20px 2px 50px 4px;
+}
+/* -------------------------------------------------------------------------------- */
+/* | FOOTER | */
+/* --------------------------------------------------------------------------------- */
+
+.fa-sign-out-alt:before {
+  position: absolute;
+  top: 4px;
+  right: 90px;
+  bottom: 20px;
+}
+
+.logout a {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  padding-right: 30px;
+  font-size: 1rem;
+}
+
+.logout a:hover {
+  color: rgb(179, 221, 248);
+}
+
+.logout p {
+  padding-left: 10px;
+}
+
+.footer a {
+  background: #ffab62;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* | LINK | */
+/* --------------------------------------------------------------------------------- */
+
+a {
+  text-decoration: none;
+  color: unset;
+  display: inline-block;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* | SIDEBAR | */
+/* --------------------------------------------------------------------------------- */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background: #292929;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 30px 60px 1px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  color: rgb(252, 252, 252);
+}
+
+.fa-bars {
+  color: white;
+}
+/* -------------------------------------------------------------------------------- */
+/* | SIDEBAR LOGO | */
+/* --------------------------------------------------------------------------------- */
+
+.sidebar-logo {
+  height: 90px;
+  position: relative;
+  padding: 10px 10px;
+  display: flex;
+  line-height: 70px;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+  background-color: rgb(107, 107, 107);
+}
+
+.sidebar-logo h1 {
+  color: rgb(255, 255, 255);
+  height: 3px;
+  max-width: 100%;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* | SIDEBAR USER | */
+/* --------------------------------------------------------------------------------- */
+
+.sidebar-menu {
+  padding: 30px 0;
+  list-style-type: none;
+}
+
+.sidebar-menu > li > a {
+  width: 100%;
+  padding: 15px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: color 0.2s ease-in-out;
+}
+
+.sidebar-menu > li > a.active {
+  background-color: rgba(255, 255, 255, 0.993);
+  color: #000000;
+  border-right: 4px solid #5d009b;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.sidebar-menu > li > a:hover {
+  color: #ffffff;
+  background-color: rgba(28, 52, 97, 0.993);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-right: 4px solid #faf3ff;
+}
+
+.sidebar-menu > li > a > i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.sidebar-close {
+  display: none;
+}
+/* -------------------------------------------------------------------------------- */
+/* | BUTTON | */
+/* --------------------------------------------------------------------------------- */
+
+.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.btn i {
+  font-size: 1.25rem;
+}
+
+.btn-outline {
+  border: 2px solid #ffffff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-outline:hover {
+  background-color: #ffffff;
+  color: #fff;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* | HEADER | */
+/* --------------------------------------------------------------------------------- */
+
+.main {
+  padding-left: 300px;
+}
+
+.main-header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-left: 30px;
+  border-bottom: 2px solid white;
+  background: linear-gradient(to right, #252525, #000000);
+  box-shadow: 0px 2px 10px rgba(49, 49, 49, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 30px 60px 1px rgba(0, 0, 0, 0.5);
+}
+.mobile-toggle {
+  display: none;
+}
+
+.main-title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+
+.main-content {
+  padding: 30px;
+  padding-top: 35px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* | BOX | */
+/* --------------------------------------------------------------------------------- */
+
+.box {
+  color: rgb(255, 255, 255);
+  border: 3px solid rgb(131, 131, 131);
+  background: rgb(107, 107, 107);
+  box-shadow: rgba(161, 228, 255, 0.1) 0px 4px 12px;
+  transition: transform 0.5s ease;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.boxup {
+  color: white;
+  background: linear-gradient(to right, #1eb7e6, #327ee2);
+  box-shadow: rgba(161, 228, 255, 0.1) 0px 4px 12px;
+  transition: transform 0.5s ease;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.box-hover:hover {
+  transform: scale(1.1);
+  border: 2px solid #69d7f3;
+}
+
+.counter-title {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.counter-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.counter-info i {
+  color: #6cfaff;
+}
+
+.box-header {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.box-body {
+  padding: 20px;
+}
+
+.f-height {
+  height: 100%;
+}
+
+.orders {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin: 20px;
+}
+
+.orders img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/* TESTING */
+table {
+  width: 100%;
+  min-width: 1000px;
+  border-radius: 10px;
+}
+
+/* DATA TABLES */
+.dataTables_wrapper label,
+.dataTables_info,
+#DataTables_Table_0_info {
+  color: white;
+}
+
+/* PAGINATION  */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  color: rgb(255, 254, 254) !important;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  background: linear-gradient(to right, #1eb7e6, #327ee2);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  cursor: default;
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid transparent;
+  background: #000;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.dataTables_wrapper,
+.no-footer {
+  padding: 20px 0 0;
+}
+
+table thead tr {
+  text-align: left;
+}
+
+th.sorting,
+th.sorting_asc,
+th.sorting_desc,
+.table-striped,
+.dataTables_info {
+  color: white;
+}
+.dataTables_paginate {
+  color: white;
+}
+
+.paginate_button .current {
+  color: white;
+}
+
+table th,
+table td {
+  /* padding: 50px 0; */
+  color: rgb(245, 245, 245);
+  border-bottom: 1px solid #ffffff;
+  background: #014f8f;
+  margin: 20px;
+}
+
+.overflow-scroll {
+  overflow-y: auto;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1280px) {
+  .sidebar {
+    transition: transform 0.5s ease-in-out;
+    max-width: 100%;
+    z-index: 99;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .main {
+    padding-left: 0;
+  }
+
+  .mobile-toggle,
+  .sidebar-close {
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+
+  .sidebar-close {
+    position: absolute;
+    right: -15px;
+    top: 250px;
+  }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi pembelian - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/column.css" />
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <!-- Logo -->
+      <div class="sidebar-logo">
+        <h1>Aplikasi pembelian</h1>
+        <div class="sidebar-close" id="sidebar-close">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+      </div>
+
+      <!-- SIDEBAR MENU -->
+      <ul class="sidebar-menu">
+        <li>
+          <a href="#" class="active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="management.html">
+            <i class="fas fa-tasks"></i>
+            <span>Management Data</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- END SIDEBAR MENU -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+      <!-- Header -->
+      <div class="main-header">
+        <div class="mobile-toggle" id="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="main-title">Dashboard</div>
+        <div class="logout">
+          <a href="index.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <p>Logout</p>
+          </a>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="row">
+          <!-- START COLUMN -->
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="boxup box-hover">
+              <!-- COUNTER -->
+              <div class="counter">
+                <div class="counter-title">total pembelian</div>
+                <div class="counter-info">
+                  <div class="counter-count">1000</div>
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+            <!-- END COUNTER -->
+          </div>
+          <!-- END COLUMN -->
+
+          <!-- START COLUMN -->
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="boxup box-hover">
+              <!-- COUNTER -->
+              <div class="counter">
+                <div class="counter-title">total pengguna</div>
+                <div class="counter-info">
+                  <div class="counter-count">100</div>
+                  <i class="fas fa-user"></i>
+                </div>
+              </div>
+            </div>
+            <!-- END COUNTER -->
+          </div>
+          <!-- END COLUMN -->
+
+          <!-- START COLUMN -->
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="boxup box-hover">
+              <!-- COUNTER -->
+              <div class="counter">
+                <div class="counter-title">total pendapatan</div>
+                <div class="counter-info">
+                  <div class="counter-count">Rp600.000</div>
+                  <i class="fas fa-chart-pie"></i>
+                </div>
+              </div>
+            </div>
+            <!-- END COUNTER -->
+          </div>
+          <!-- END COLUMN -->
+
+          <!-- START COLUMN -->
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="boxup box-hover">
+              <!-- COUNTER -->
+              <div class="counter">
+                <div class="counter-title">transaksi hari ini</div>
+                <div class="counter-info">
+                  <div class="counter-count">Rp100.000</div>
+                  <i class="fas fa-shopping-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END COUNTER -->
+        </div>
+        <!-- END COLUMN -->
+
+        <!-- START ROW -->
+        <div class="row">
+          <div class="col-12">
+            <div class="box">
+              <div class="box-header">Pesanan Terbaru</div>
+              <div class="row">
+                <div class="col-6 col-md-6 col-sm-12">
+                  <div class="orders">
+                    <img src="./assets/img/profile-1.png" alt="user image" />
+                    <span>Budi Hartono</span>
+                  </div>
+
+                  <div class="orders">
+                    <img src="./assets/img/profile-2.jpg" alt="user image" />
+                    <span>Joko Widodo</span>
+                  </div>
+
+                  <div class="orders">
+                    <img src="./assets/img/profile-3.jpg" alt="user image" />
+                    <span>Juandi Wijaya</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-6 col-sm-12">
+                  <div class="orders">
+                    <img src="./assets/img/profile-4.jpg" alt="user image" />
+                    <span>Maria Diana</span>
+                  </div>
+
+                  <div class="orders">
+                    <img src="./assets/img/profile-5.jpg" alt="user image" />
+                    <span>Janet Hadiana</span>
+                  </div>
+
+                  <div class="orders">
+                    <img src="./assets/img/profile-6.jpg" alt="user image" />
+                    <span>Jasmin Wijayanto</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END ROW -->
+        <p class="stan">STANLEY JAYA - 2301851206</p>
+      </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <div class="overlay"></div>
+    <script type="text/javascript" src="./assets/js/sidebar.js"></script>
+  </body>
+</html>

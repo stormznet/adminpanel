@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi pembelian - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/column.css" />
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <!-- Logo -->
+      <div class="sidebar-logo">
+        <h1>Aplikasi pembelian</h1>
+        <div class="sidebar-close" id="sidebar-close">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+      </div>
+
+      <!-- SIDEBAR MENU -->
+      <ul class="sidebar-menu">
+        <li>
+          <a href="home.html">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="management.html" class="active">
+            <i class="fas fa-tasks"></i>
+            <span>Management Data</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- END SIDEBAR MENU -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+      <!-- Header -->
+      <div class="main-header">
+        <div class="mobile-toggle" id="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="main-title">Dashboard</div>
+        <div class="logout">
+          <a href="index.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <p>Logout</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="row">
+          <div class="col-12">
+            <!-- ORDERS TABLE -->
+            <div class="box">
+              <div class="box-header">Penjualan</div>
+              <div class="box-body overflow-scroll">
+                <table class="table table-hover dtabel">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Nama item</th>
+                      <th>Jumlah</th>
+                      <th>Dibuat oleh</th>
+                      <th>Dibuat tanggal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Jaket</td>
+                      <td>23</td>
+                      <td>Daniel Djaya</td>
+                      <td>12-02-2021</td>
+                    </tr>
+
+                    <tr>
+                      <td>2</td>
+                      <td>Tas</td>
+                      <td>30</td>
+                      <td>Wisman Kuniadi</td>
+                      <td>13-02-2021</td>
+                    </tr>
+
+                    <tr>
+                      <td>3</td>
+                      <td>Headset</td>
+                      <td>100</td>
+                      <td>Jaki wondang</td>
+                      <td>14-02-2021</td>
+                    </tr>
+
+                    <tr>
+                      <td>4</td>
+                      <td>Botol minum</td>
+                      <td>40</td>
+                      <td>Wisman Hayadi</td>
+                      <td>15-02-2021</td>
+                    </tr>
+
+                    <tr>
+                      <td>5</td>
+                      <td>Sabun mandi</td>
+                      <td>50</td>
+                      <td>Kenneth</td>
+                      <td>16-02-2021</td>
+                    </tr>
+
+                    <tr>
+                      <td>6</td>
+                      <td>Keyboard</td>
+                      <td>13</td>
+                      <td>Junneth Wijaya</td>
+                      <td>17-02-2021</td>
+                    </tr>
+
+                    <tr>
+                      <td>7</td>
+                      <td>Mouse</td>
+                      <td>23</td>
+                      <td>Isman</td>
+                      <td>18-02-2021</td>
+                    </tr>
+
+                    <tr>
+                      <td>8</td>
+                      <td>Monitor</td>
+                      <td>70</td>
+                      <td>Hadi Christian</td>
+                      <td>19-02-2021</td>
+                    </tr>
+
+                    <tr>
+                      <td>9</td>
+                      <td>Kabel USB</td>
+                      <td>23</td>
+                      <td>Handi Tri</td>
+                      <td>20-02-2021</td>
+                    </tr>
+
+                    <tr>
+                      <td>10</td>
+                      <td>Tempat pensil</td>
+                      <td>10</td>
+                      <td>Edgar Rumangkang</td>
+                      <td>21-02-2021</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- END ORDERS TABLE -->
+          </div>
+        </div>
+        <!-- END COLUMN -->
+      </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <div class="overlay"></div>
+    <script src="./assets/js/sidebar.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".dtabel").DataTable();
+      });
+    </script>
+  </body>
+</html>
